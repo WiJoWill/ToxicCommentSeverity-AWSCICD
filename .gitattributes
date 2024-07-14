@@ -1,0 +1,5 @@
+datasource/jigsaw18_train.csv filter=lfs diff=lfs merge=lfs -text
+data_clean/jigsaw18_train_datadict.pickle filter=lfs diff=lfs merge=lfs -text
+data_clean/jigsaw19_train_datadict.pickle filter=lfs diff=lfs merge=lfs -text
+datasource/jigsaw19_train.csv filter=lfs diff=lfs merge=lfs -text
+artifacts/model filter=lfs diff=lfs merge=lfs -text
