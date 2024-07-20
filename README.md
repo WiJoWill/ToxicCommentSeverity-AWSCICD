@@ -156,24 +156,19 @@ To deploy this project using Docker and AWS EC2, follow these steps:
 
    Follow the GitHub Actions runner setup guide to configure the runner on your EC2 instance.
 
-### Building and Running Docker Container
-
-1. **Build the Docker Image**
+### Adjust the Instance Setting
+1. **Adjust the Instance Security Groups**
     ```sh
-    docker build -t your-image-name .
-    ```
-
-2. **Run the Docker Container**
-    ```sh
-    docker run -d -p 80:80 your-image-name
+    Remember to set the appropriate port in Security Groups
     ```
 
 This will deploy the application on your EC2 instance, accessible through the public IP address of the instance.
 
 ## Contributing
 
-Guidelines for contributing to your project.
+Thanks for the youtuber: https://www.youtube.com/@krishnaik06
+Thanks for the competition: https://www.kaggle.com/c/jigsaw-toxic-severity-rating
 
 ## License
 
-Information about the project's license.
+MIT License
