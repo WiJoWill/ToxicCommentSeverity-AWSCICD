@@ -34,42 +34,23 @@ The current project uses the DeBERTa model as the base model for predictions.
 ## Directory Structure
 
 The directory structure of this project is as follows:
-project/
-├── .ebextensions/
-├── .github/
-├── artifacts/
-│ ├── comments_to_score.csv
-│ ├── config.json
-│ ├── merges.txt
-│ ├── model/
-│ ├── special_tokens_map.json
-│ ├── tokenizer_config.json
-│ └── vocab.json
-├── src/
-│ ├── components/
-│ │ ├── data_ingestion.py
-│ │ ├── data_transformation.py
-│ │ └── model_trainer.py
-│ ├── pipeline/
-│ │ ├── init.py
-│ │ ├── predict_pipeline.py
-│ │ ├── train_pipeline.py
-│ │ ├── init.py
-│ │ ├── exception.py
-│ │ ├── logger.py
-│ │ └── utils.py
-├── templates/
-│ ├── home.html
-│ ├── home_style.css
-│ └── index.html
-├── .DS_Store
-├── .gitattributes
-├── .gitignore
-├── Dockerfile
-├── README.md
-├── app.py
-├── requirements.txt
-└── setup.py
+packages/button
+├── lib
+│   ├── button.d.ts
+│   ├── button.js
+│   ├── button.js.map
+│   ├── button.stories.d.ts
+│   ├── button.stories.js
+│   ├── button.stories.js.map
+│   ├── index.d.ts
+│   ├── index.js
+│   └── index.js.map
+├── package.json
+├── src
+│   ├── button.stories.tsx
+│   ├── button.tsx
+│   └── index.ts
+└── tsconfig.json
 
 
 ## Directory and File Descriptions
