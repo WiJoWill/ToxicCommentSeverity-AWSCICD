@@ -132,4 +132,48 @@ Lists the Python dependencies required for the project.
 ### `setup.py`
 Script for setting up the Python package.
 
+## Deployment with Docker and AWS EC2
 
+To deploy this project using Docker and AWS EC2, follow these steps:
+
+### Docker Setup on EC2
+
+1. **Update and Upgrade Packages (Optional)**
+    ```sh
+    sudo apt-get update -y
+    sudo apt-get upgrade
+    ```
+
+2. **Install Docker (Required)**
+    ```sh
+    curl -fsSL https://get.docker.com -o get-docker.sh
+    sudo sh get-docker.sh
+    sudo usermod -aG docker ubuntu
+    newgrp docker
+    ```
+
+3. **Configure the Runner Following GitHub**
+
+   Follow the GitHub Actions runner setup guide to configure the runner on your EC2 instance.
+
+### Building and Running Docker Container
+
+1. **Build the Docker Image**
+    ```sh
+    docker build -t your-image-name .
+    ```
+
+2. **Run the Docker Container**
+    ```sh
+    docker run -d -p 80:80 your-image-name
+    ```
+
+This will deploy the application on your EC2 instance, accessible through the public IP address of the instance.
+
+## Contributing
+
+Guidelines for contributing to your project.
+
+## License
+
+Information about the project's license.
