@@ -35,15 +35,42 @@ The current project uses the DeBERTa model as the base model for predictions.
 
 The directory structure of this project is as follows:
 # Tree
-
 ```
-.
+ToxicCommentSeverity-AWSCICID/
+├── .ebextensions/
+├── .github/
+├── artifacts/
+│ ├── comments_to_score.csv
+│ ├── config.json
+│ ├── merges.txt
+│ ├── model/
+│ ├── special_tokens_map.json
+│ ├── tokenizer_config.json
+│ └── vocab.json
+├── src/
+│ ├── components/
+│ │ ├── data_ingestion.py
+│ │ ├── data_transformation.py
+│ │ └── model_trainer.py
+│ ├── pipeline/
+│ │ ├── init.py
+│ │ ├── predict_pipeline.py
+│ │ ├── train_pipeline.py
+│ │ ├── exception.py
+│ │ ├── logger.py
+│ │ └── utils.py
+├── templates/
+│ ├── home.html
+│ ├── home_style.css
+│ └── index.html
+├── .DS_Store
+├── .gitattributes
+├── .gitignore
+├── Dockerfile
 ├── README.md
-├── dir1
-│   └── file
-└── dir2
-    └── file
-
+├── app.py
+├── requirements.txt
+└── setup.py
 ```
 
 ## Directory and File Descriptions
@@ -83,9 +110,6 @@ Contains HTML templates for the web application.
 - `home.html`: Home page template.
 - `home_style.css`: CSS for styling the home page.
 - `index.html`: Index page template.
-
-### `.DS_Store`
-System file (usually hidden) created by macOS.
 
 ### `.gitattributes`
 Defines attributes for pathnames to customize the behavior of Git.
