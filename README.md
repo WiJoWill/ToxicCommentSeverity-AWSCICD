@@ -161,6 +161,13 @@ To deploy this project using Docker and AWS EC2, follow these steps:
     ```sh
     Remember to set the appropriate port in Security Groups
     ```
+2. **ACCESS and Test**
+    ```sh
+    Access the website with url:port/predictdata
+    ```
+    ![images](/images/sample1.jpg)
+    ![images](/images/sample2.jpg)
+    ![images](/images/sample3.jpg)
 
 This will deploy the application on your EC2 instance, accessible through the public IP address of the instance.
 
